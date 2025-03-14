@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  springboot3_api:
+    container_name: springboot3_api
+    build: .
+    image: ghcr.io/useraccount/springboot3-api:latest
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    env_file: 
+      - .env
+    environment:
+      - MONGODB_HOST=host.docker.internal
+    volumes:
+      - "/mnt/volume_1/springboot3:/mnt/uploads"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - springboot3-network
+
+networks:
+  springboot3-network:
+    driver: bridge
