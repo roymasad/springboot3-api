@@ -1,6 +1,6 @@
-# Spring Boot 3 API Template
+# Spring Boot 3 API Template with Social media posts
 
-As part of a series of templates i created to meet my own projects needs and regularly use, i am sharing in this repo a modern feature-rich REST API template i built with Spring Boot 3 and Java 17 that can be used to jumpstart your backend development with industry best practices. It is designed with multi tenant/business SaaS solutions in mind.
+As part of a series of templates i created to meet my own projects needs and regularly use, i am sharing in this repo a modern feature-rich REST API template i built with Spring Boot 3 and Java 17 that can be used to jumpstart your backend development with industry best practices. It is designed with multi tenant/business SaaS solutions in mind and has a social media/posts module with likes.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Java Version](https://img.shields.io/badge/Java-17-blue)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
