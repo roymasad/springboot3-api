@@ -214,6 +214,7 @@ All passwords must meet these requirements:
 - Add refresh tokens
 - Add integration with push notification providers
 - Add Swagger and Prometheus integrations
+- Enable Caffeine caching
 
 ## 🔧 Customization
 
